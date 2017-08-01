@@ -53,7 +53,7 @@ int main(int argc, char* argv[]){
 - Check the tutorial resources page to see a table with if we have marked you off for a lab. 
     + Also let me know if you have a pair name to replace the default!
     + I used the roll names just to get this organised, today when i come around just let me know if you'd like to change the name that's up there. 
-    + If there is a star next to your name, you arn't on the roll or i don't have a group for you! just grab me when you have a chance. 
+    + If there is a star next to your name, i don't have a group written down for you! just grab me when you have a chance. 
 - autotests are worth some marks so try to get them working
 
 # Weekdays

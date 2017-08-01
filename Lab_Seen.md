@@ -3,7 +3,7 @@
 | Pair Name | A zid   | A Name    | B zid   | B Name  | W1 | W2 | W3 | 
 | --------- | --------|---------- | --------|-------- | -- | -- | -- | 
 | PAIR 1    | z5162334|McKenzie D | z5163110|Diane M  |    |    |    |
-| PAIR 2    | z5162115|Carlo P    | z???????|Beryll S*|    |    |    |
+| PAIR 2    | z5162115|Carlo P    |                   |    |    |    |
 | PAIR 3    | z5162079|Tristan N  | z5098105|Yixuan C |    |    |    |
 | PAIR 4    | z5164318|Peter P    | z5162014|Lavan S  |    |    |    |
 | PAIR 5    | z5167797|Noah K     | z5120556|Louis Y  |    |    |    |
