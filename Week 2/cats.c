@@ -7,13 +7,14 @@ int main(int argc, char* argv[]){
 	// What does 1 mean?
 	int cats = 10;
 	int crazy = TRUE;
+	bool x;
 	if(cats == 0){
 	    printf("I have no cats\n");
 	}
 	else if(cats == 5){
 	    printf("I have some cats\n");
 	}
-	else if(5 < cats < 10){
+	else if(5 < cats){
 	    printf("I have possibly too many cats\n");
 	}
 	else if(cats == 10 && crazy){
@@ -22,8 +23,10 @@ int main(int argc, char* argv[]){
 	else if(cats == 10){
 	    printf("I am a cat person\n");
 	}
-	else if(cats == -1 || 11){
+	else if(cats == -1){
 	    printf("?????\n");
 	}
 	return EXIT_SUCCESS;
 }
+
+
