@@ -9,7 +9,10 @@ int main(int argc, char* argv[]){
 	char stringC[6] = "Hello";
 	char *stringD = "Hello";
 	// play around
-
+	stringC[0] = 'Y';
+	stringD[0] = 'Y';
+	printf("%s\n",stringC);
+	printf("%s\n",stringD);
     return EXIT_SUCCESS;
 }
 

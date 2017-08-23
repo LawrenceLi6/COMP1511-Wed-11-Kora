@@ -16,6 +16,7 @@ int main (int argc, char *argv[]) {
 
     // CALL THE SWAP FUNCTION HERE
     
+	swap(&num1,&num2);
     printf ("The numbers swapped are %d and %d.\n", num1, num2);
 
     return EXIT_SUCCESS;
@@ -24,4 +25,8 @@ int main (int argc, char *argv[]) {
 // this function swaps the values
 // of the two integers, passed in as pointers.
 void swap (int *a, int *b) {
+	int temp  = -1;
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
