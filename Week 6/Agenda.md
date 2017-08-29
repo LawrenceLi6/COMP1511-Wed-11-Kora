@@ -19,6 +19,11 @@
 
 `pointers.c`
 
+## Challange
+---
+
+I put up a cool challange question, it's honestly *really* hard but if you want a challange have a crack. 
+
 ## Structured Data - structs!
 ---
 
