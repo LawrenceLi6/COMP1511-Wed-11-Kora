@@ -29,11 +29,10 @@ int main (int argc, char *argv[]) {
     printf("You entered %d.\n", num);
     
     //prints double their number
-    multiply(num, 2);
-    int dbl = num;
+    int dbl = multiply(num, 2);
     printf("%d doubled is %d.\n", num, dbl);
     
-    int sq = square(dbl);
+    int sq = square(num);
     printf("%d squared is %d.\n", num, sq);
     
     //prints their favourite times my favourite
@@ -53,12 +52,12 @@ int square (int n) {
 
 //this function prints if a number is even or odd
 //in the format "n is even."
-void printOddOrEven (int n) {
+void printOddOrEven (int num) {
     //ENTER YOUR CODE HERE
     if(num%2 == 0){
-        printf("n is even\n")
+        printf("n is even\n");
     }else{
-         printf("n is odd\n")
+         printf("n is odd\n");
     }
 }
 

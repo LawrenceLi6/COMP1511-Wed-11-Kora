@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[]){
 
-	printf("char size: %lu\n",sizeof(char));
+	printf("int size: %lu\n",sizeof(int));
 	char c = 127;
 	printf("char example: %d\n",c);
 	c+=1;
