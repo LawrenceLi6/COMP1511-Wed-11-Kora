@@ -1,6 +1,6 @@
 # Week 6 - Structs
 
-## Code Review - Rotate 13 - Patrick C And Brendan D
+## Code Review - Rotate 13 - Patrick C ONLY
 ---
 
 `fun`

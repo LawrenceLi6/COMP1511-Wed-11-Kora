@@ -8,10 +8,12 @@
 #include <math.h>
 
 // DO NOT CHANGE THIS STRUCT
-typedef struct _complex {
+struct _complex {
     double real;
     double imaginary;
-} complex;
+};
+
+typedef struct _complex complex;
 
 double complexAbsolute(complex c);
 
