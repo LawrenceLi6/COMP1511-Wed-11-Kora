@@ -1,6 +1,6 @@
 # Week 7 - ass 1
 
-## Code Review - Parsing - INSERT NAME HERE
+## Code Review - Parsing
 ---
 
 `fun`
@@ -31,10 +31,10 @@ also NOTE that the warm ups are good to do this week!!
 
 #### why?
 
-#### what the hell is ->
+#### what the hell is '->'
 
 
 ## Assign next week code review
 ---
 
-`none ?`
+`TBA`
