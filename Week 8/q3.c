@@ -29,7 +29,32 @@
 
 // Do not change this #define, or your program will fail the autotests!
 #define NO_DUPLICATE -1
+#include <stdio.h>
+#include <stdlib.h>
 
 int findDuplicate (int length, int array[]) {
-    return 0;
+	int i = 0;
+	int currSearch = -1;
+	int result = NO_DUPLICATE;
+	int j;
+	while(i < length){
+		currSearch = array[i];
+		// search for match
+		j = i+1;
+		while(j < length){
+			if(array[j] == currSearch){
+				result = currSearch;
+			}
+			j++;
+		}
+		i++;
+	}
+    return result;
+}
+
+int main(int argc, char* argv[]){
+	int a[] = {1,2,6,4,5,6};
+	int res = findDuplicate(6,a);
+	printf("Result: %d\n",res);
+	return EXIT_SUCCESS;
 }

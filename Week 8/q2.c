@@ -17,8 +17,26 @@
 // Do not change these #defines, or your program will fail the autotests!
 #define TRUE 1
 #define FALSE !(TRUE)
+#include <stdio.h>
+#include <stdlib.h>
 
 int containsUppercase (char *string) {
     // Write your solution here.
-    return 0;
+    int i = 0;
+    char c = string[i];
+    int result = FALSE;
+    while(c != '\0'){
+    	if(c >= 'A' && c <= 'Z'){
+    		result = TRUE;
+    	}
+    	i++;
+    	c = string[i];
+    }
+    return result;
+}
+
+int main(int argc, char* argv[]){
+	int res = containsUppercase("");
+	printf("Result: %d\n",res);
+	return EXIT_SUCCESS;
 }
