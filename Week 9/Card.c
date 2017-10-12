@@ -22,7 +22,10 @@
 typedef struct _card {
     // Insert the fields here that you need for your
     // implementation.
-
+	suit cardSuit;
+	color cardColor;
+	char number;
+	char* secret;
 
 } card;
 
@@ -37,17 +40,22 @@ typedef struct _card {
 // These values can only be set at creation time.
 // The number should be between 0x0 and 0xF.
 Card newCard(char number, color color, suit suit) {
-    return NULL; // Replace this with your own code.
+	Card c = calloc(1,sizeof(card));
+	c->suit = suit;
+	c->color = color;
+	c->number = number;
+    return c; // Replace this with your own code.
 }
 
 // Destroy an existing card.
 void destroyCard(Card card) {
+	free(card);
     return; // Replace this with your own code.
 }
 
 // Get the card suit (HEARTS, DIAMONDS, etc).
 suit cardSuit(Card card) {
-    return HEARTS; // Replace this with your own code.
+    return card->cardSuit; // Replace this with your own code.
 }
 
 // Get the card number (0x0 through 0xF).
@@ -60,6 +68,8 @@ color cardColor(Card card) {
     return RED; // Replace this with your own code.
 }
 
-
 // Implement your own functions here, don't forget to make them static!
-
+void testShit(void){
+	Card c = newCard(6,YELLOW,DIAMONDS);
+	assert(c->color = YELLOW);
+}

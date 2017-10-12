@@ -1,13 +1,10 @@
 typedef struct _game {
-    int turnNumber; // perhaps something like this?
-    // ... anything else?
-
+    int turnNumber;
+    int currentPlayer;
+    int direction;
 } game;
 
-Game newGame (/* ... */) {
-    // allocate memory for a game struct
-
-    // set the turn number to start at 0
+Game newGame () {
 
 }
 
@@ -16,11 +13,21 @@ int currentTurn (Game game) {
 }
 
 void playMove(Game game, playerMove move) {
-    // if the player played an END_TURN move...
-
-    // their turn has ended, so increase the turn number.
+	if (move.action == END_TURN) {
+		game->turnNumber++;
+		if (game->direction == CLOCKWISE) {
+			game->currentPlayer = (game->currentPlayer + 1) % NUM_PLAYERS;
+		} else {
+			game->currentPlayer = (game->currentPlayer - 1);
+			if (game->currentPlayer < 0) {
+				game->currentPlayer = NUM_PLAYERS-1;
+			}
+		}
+	} else{
+		printf("HHHHHAHHHHAHH\n");
+	}
 }
 
 int currentPlayer(Game game) {
-	
+	return game->currentPlayer;
 }
