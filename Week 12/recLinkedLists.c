@@ -3,14 +3,21 @@
 #include <assert.h>
 #include "list.h"
 
-void printList(List l) {
+List arrayToList(int array[], int n);
 
+void printList(Node n) {
+	if ( n == NULL) {
+		printf("->X\n");
+	} else {
+		printf("->[%d]\n",n->value);
+		printList(n->next);
+	}
 }
 
 int main(int argc, char* argv[]) {
 	int a[] = {1,2,3,4,5};
 	List l = arrayToList(a,5);
-	printList(l);
+	printList(l->head);
 	return EXIT_SUCCESS;
 }
 
