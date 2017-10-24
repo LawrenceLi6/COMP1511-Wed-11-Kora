@@ -50,8 +50,61 @@ List arrayToList(int array[], int n);
  * think may help
  */
 
-void oddEven(List A, List B) { 
+// tells me how many times a nubmer appears in a list
+int appearNumber(List l, int e) {
+	Node curr = l->head;
+	int count = 0;
+	while (curr != NULL) {
+		if (curr->value == e) {
+			count++;
+		}
+		curr = curr->next;
+	}
+	return count;
+}
 
+void oddEven(List A, List B) { 
+	Node curr = B->head;
+	Node prev = NULL;
+	Node toKill = NULL;
+
+	int num = -1;
+	int e = -1;
+
+	while(curr != NULL) {
+		e = curr->value;
+		num = appearNumber(A,e);
+		if (num == 0) {
+			// do nothing
+			prev = curr;
+			curr = curr->next;
+		} else if (num % 2 == 0) {
+			// even - duplicate
+			Node new = newNode(curr->value);
+			Node temp = curr->next;
+			curr->next = new;
+			new->next = temp;
+		} else {
+			// odd - delete
+
+			if (prev == NULL) {
+				// first node deletion case
+				toKill = curr;
+				B->head = curr->next;
+				prev = NULL;
+				curr = curr->next;
+				destroyNode(toKill);
+
+			} else {
+				// all other cases
+				toKill = curr;
+				prev->next = curr->next;
+				curr = curr->next;
+				destroyNode(toKill);
+			}
+
+		}
+	}
 }
 
 
