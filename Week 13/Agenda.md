@@ -24,7 +24,12 @@ i didn't test them lol so email me if you think i'm wrong
 ## Hot jams & memes
 ---
 
+http://www.sync-video.com/
+
 https://www.youtube.com/watch?v=dsU3B0W3TMs
+https://www.youtube.com/watch?v=ZcoqR9Bwx1Y
+https://www.youtube.com/watch?v=0J3vgcE5i2o
+
 
 <img src="https://scontent.fbne1-1.fna.fbcdn.net/v/t1.0-9/22279833_489864934719968_3914430976970928232_n.jpg?oh=bb1b5b3689526a1371a5ca89fc2e42ad&oe=5A6B4DEC">
 
